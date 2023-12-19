@@ -1,0 +1,148 @@
+h1{
+    margin: 0
+}
+
+header {
+    display: flex;
+    height: 70px;
+    background-color: black; 
+    padding: 10px;
+    font-size: 20px;
+    font-style: italic;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    min-height: 100vh;
+    background-color: darkcyan;
+}
+
+.logo img {
+    width: 100px; 
+    height: auto; 
+    padding: 10px;
+}
+
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+
+}
+
+header nav ul li {
+    margin-right: 30px;
+    justify-content: center;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.QuienEs {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    padding-top: 50px;
+    font-style: italic;
+    font-size: 17px;
+
+}
+
+.QuienEsHijo {
+    width: 550px;
+    height: 500px;
+    background-color: deepskyblue;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 20px;
+    border: 2px solid black;
+    margin: 20px;
+    font-style: italic;
+
+
+}
+
+.Datos {
+    width: 400px;
+    height: 500px;
+    background-color: deepskyblue;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 20px;
+    border: 2px solid black;
+    margin: 20px 30px;
+    font-style: italic;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    margin-top: auto;
+}
+
+footer article ul li {
+    margin-right: 40px;
+    display: flex;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.footerMusica {
+    padding: 5px;
+}
+
+.footerLinks {
+    display: flex;
+    margin-right: 40px;
+}
+
+/* Grids en Discografia */
+
+.DiscosGrid{
+    display: grid;
+    grid-template-columns: 152px 500px ;
+    grid-template-rows: 152px 152px 152px 152px 152px 152px;
+    gap: 15px;
+}
+
+.Boxgrid img {
+    width: 100%;
+    height: 100%;
+}
+
+.Boxgridmusica {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 600px) {
+    .DiscosGrid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 200px);
+        grid-template-areas: 
+        "Boxgrid1"
+        "Boxgrid2"
+        "Boxgrid3"
+        "Boxgrid4"
+        "Boxgrid5"
+        "Boxgrid6"
+        "Boxgrid7"
+        "Boxgrid8"
+        "Boxgrid9"
+        "Boxgrid10"
+        "Boxgrid11"
+        "Boxgrid12";
+    }
+
+}
+
+
+.footer {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
