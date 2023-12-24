@@ -1,9 +1,15 @@
+/* Reset CSS */
+* {
+    margin: 0 ;
+    padding: 0 !important;
+    box-sizing: border-box ;
+}
+
 h1{
     margin: 0
 }
 
 header {
-    display: flex;
     height: 70px;
     background-color: black; 
     padding: 10px;
@@ -15,18 +21,18 @@ header {
 
 main {
     min-height: 100vh;
-    background-color: darkcyan;
+    width: 100vh;
 }
 
 .logo img {
     width: 100px; 
-    height: auto; 
+    height: 80px; 
     padding: 10px;
 }
 
 
 header nav ul {
-    display: flex;
+
     justify-content: center;
 
 }
@@ -39,6 +45,9 @@ header nav ul li {
 body {
     margin: 0 auto;
     max-width: 1440px;
+    width: 100%;
+    height: 100%;
+    background-color: darkcyan;
 }
 
 .QuienEs {
@@ -77,28 +86,6 @@ body {
     font-style: italic;
 }
 
-footer {
-    display: flex;
-    align-items: center;
-    background-color: black;
-    margin-top: auto;
-}
-
-footer article ul li {
-    margin-right: 40px;
-    display: flex;
-    font-style: italic;
-    font-size: 20px;
-}
-
-.footerMusica {
-    padding: 5px;
-}
-
-.footerLinks {
-    display: flex;
-    margin-right: 40px;
-}
 
 /* Grids en Discografia */
 
@@ -141,8 +128,82 @@ footer article ul li {
 }
 
 
+
+
+.navbar-brand img {
+    width: 100px !important; 
+    height: 80px !important; 
+    padding: 10px !important;
+    background-color: black !important;
+}
+
+.navbar {
+    background-color: black!important;
+    position: fixed;
+    width: 100%;
+}
+
+/* Estilo para los enlaces en el navbar */
+.navbar-nav .nav-link {
+    color: #ffffff; /* Color del texto normal */
+    transition: color 0.3s, font-size 0.3s; /* Transición suave de color y tamaño de fuente */
+}
+
+
+  /* Cambiar color al pasar el cursor por encima */
+.navbar-nav .nav-link:hover {
+    color: #ffcc00; /* Color del texto al pasar el cursor por encima */
+}
+
+
+  /* Agrandar el texto al pasar el cursor por encima */
+.navbar-nav .nav-link:hover {
+    font-size: 1.1em; /* Tamaño de fuente más grande al pasar el cursor por encima */
+}
+
+
+/* Estilo para el footer */
+/* Estilo para el footer */
 .footer {
-    flex-direction: column;
-    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: center;
+}
+
+.footer .footer-content {
+    display: flex;
     align-items: center;
 }
+
+.footer img {
+    width: 100px; 
+    height: 80px; 
+    padding: 10px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Hacer que la lista esté en línea */
+}
+
+.footer li {
+    margin-right: 20px;
+    display: inline-block; /* Hacer que los elementos de la lista estén en línea */
+}
+
+.footer a {
+    color: #ffffff;
+    transition: color 0.3s, font-size 0.3s;
+}
+
+.footer a:hover {
+    color: #ffcc00;
+    font-size: 1.1em;
+}
+
