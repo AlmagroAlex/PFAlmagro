@@ -6,15 +6,12 @@
     
     <!-- LIBRERÍA DE FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="stylesheet" href="../css/style.css">
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
     <title>Artistas Relacionados</title>
 </head>
 <body>
-    <header>
+    <header class="position-relative">
         <nav class="navbar navbar-expand-lg bg-dark-5">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img src="../iconos/canserbero-icono-header.png" alt=""></a>
@@ -27,7 +24,7 @@
                     <a class="nav-link" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Discografia</a>
+                    <a class="nav-link" href="discografia.html">Discografia</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link" href="videos-y-entrevistas.html">Videos y entrevistas</a>
@@ -36,25 +33,53 @@
                     <a class="nav-link" href="letras.html">Letras</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="artistas-relacionados.html">Artistas relacionados</a>
+                    <a class="nav-link" href="#">Artistas relacionados</a>
                     </li>
                 </ul>
                 </div>
             </div>
             </nav>
         </header>
-    
-    <main>
-        <!-- Contenido específico de la página de artistas relacionados -->
-        <h1>Contenido de Artistas Relacionados</h1>
+
+
+    <main id="main-cards">
+        <div class="card position-relative" style="width: 300px;" id="lilsupacarta" >
+            <img src="../images/lilsupa.jpg" class="card-img-top" alt="Lil Supa">
+            <div class="card-body text-center">
+            <h5 class="card-title text-center fw-bold">Lil Supa</h5>
+            <p class="card-text"> Marlon Morales (aka Lil Supa') se ha caracterizado por ser un músico reservado y a la misma vez controversial, con aspiraciones particulares, al igual que su música y una estética audiovisual propia que ha mantenido desde sus inicios, en esta conversación tratamos de desglosar algunos de sus pensamientos.</p>
+            <a href="https://open.spotify.com/intl-es/artist/0qHbO3z6lgLE6ZYCkQBo1K?si=MOquB6x5Rp2eZcmFTSgrdA" class="btn btn-success" id="boton-spotify">Spotify</a>
+            </div>
+        </div>
+
+        <div class="card position-relative" style="width: 300px;" id="apachecarta" >
+            <img src="../images/apache.jpg" class="card-img-top" alt="Apache">
+            <div class="card-body text-center">
+            <h5 class="card-title text-center fw-bold">Apache Las Minas</h5>
+            <p class="card-text"> Larry Herrera mejor conocido como APACHE un lirico explicito con una amplia trayectoria artística en el rap Venezolano, integrante de la agrupación 4to poder, residente del barrio las Minas de Baruta, lugar mejor conocido en sus letras como LAS MINAS CITY.</p>
+            <a href="https://open.spotify.com/intl-es/artist/2pvyE8W9RWESQxkyAWZqgY?si=CT0MzVMKQwKUIwLL-0AGHw" class="btn btn-success" id="boton-spotify">Spotify</a>
+            </div>
+        </div>
+
+        <div class="card position-relative" style="width: 300px;" id="mcklopediacarta" >
+            <img src="../images/mcklopedia.jpg" class="card-img-top" alt="Mcklopedia">
+            <div class="card-body text-center">
+            <h5 class="card-title text-center fw-bold">Mcklopedia</h5>
+            <p class="card-text"> Ramses Meneses mejor conocido como Mcklopedia, es un artista venezolano originario de Caracas, Venezuela considerado como uno de los pilares fundamentales del freestyle y el movimiento del hiphop Latinoamericano con más de 15 años en la escena internacional musical.</p>
+            <a href="https://open.spotify.com/intl-es/artist/1PNgAcUW6UgN59okEaTpvG?si=FbVZMeIeQB-l25y7EpXc2w" class="btn btn-success" id="boton-spotify">Spotify</a>
+            </div>
+        </div>
     </main>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <img src="../iconos/canserbero-icono-header.png" class="d-inline-block align-text-top" alt="Logo">
+
+
+    <footer class="footer d-flex">
+        <div class="d-flex flex-wrap">
+            <a class="navbar-brand" href="#"><img src="../iconos/canserbero-icono-header.png" alt=""></a>
+        </div>
+        <div class="container-fluid d-flex bg-dark-5 flex-wrap justify-content-end">
                 <ul>
-                    <li class="nav-item">
+                    <li class="nav-item ">
                         <a class="nav-link" href="../index.html">Inicio</a>
                     </li>
                 <li class="nav-item">
@@ -69,7 +94,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Artistas relacionados</a>
                 </li>
-            </ul>
+            </ul
         </div>
     </footer>
 
