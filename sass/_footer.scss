@@ -34,19 +34,22 @@
 }
 
 /* -------------------------------------Estilo para el footer en dispositivos pequeños------------------------------------- */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .footer-content {
-        flex-direction:row;
-        text-align: center;
-    }
-
-    .footer-content img {
-        margin-bottom: 10px;
-    }
-
-    .footer ul {
         flex-direction: column;
         text-align: center;
+        width: 100%;
+        img {
+            margin-bottom: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+    }
+
+
+    .footer ul {
+        display: none;
     }
 
     .footer li {
@@ -54,3 +57,4 @@
         margin-bottom: 10px;
     }
 }
+

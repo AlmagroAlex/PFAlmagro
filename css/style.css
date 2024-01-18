@@ -29,7 +29,10 @@
 
 @media (max-width: 600px) {
   #main-cards {
-    display: block !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 }
 header {
@@ -114,17 +117,20 @@ header nav ul li {
 }
 
 /* -------------------------------------Estilo para el footer en dispositivos pequeños------------------------------------- */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .footer-content {
-    flex-direction: row;
+    flex-direction: column;
     text-align: center;
+    width: 100%;
   }
   .footer-content img {
     margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
   .footer ul {
-    flex-direction: column;
-    text-align: center;
+    display: none;
   }
   .footer li {
     margin-right: 0;
@@ -229,42 +235,29 @@ body {
   }
 }
 .entrevistas {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.entrevistas .entrevistas div {
-  position: relative;
+.entrevistas #Videos {
   width: 100%;
-  padding-bottom: 56.25%; /* Proporción 16:9 para los videos de YouTube */
-  overflow: hidden;
+  max-width: 600px;
+  margin: 10px;
+  box-shadow: 0 10px 15px rgb(255, 255, 255);
 }
-.entrevistas .video-container {
-  position: absolute;
-  top: 0;
-  left: 0;
+.entrevistas #Videos iframe {
   width: 100%;
-  height: 100%;
+  height: 400px;
 }
-.entrevistas iframe {
-  width: 100%;
-  height: 100%;
-  border: 0;
+@media (max-width: 600px) {
+  .entrevistas #Videos {
+    max-width: 100%;
+  }
+  .entrevistas #Videos iframe {
+    height: 200px;
+  }
 }
 
-/* Media query para ajustar el espaciado entre columnas en pantallas más grandes */
-@media (min-width: 768px) {
-  .entrevistas {
-    column-gap: 30px;
-  }
-}
-/* Media query para ajustar el espaciado entre filas en pantallas más grandes */
-@media (min-height: 600px) {
-  .entrevistas {
-    row-gap: 30px;
-  }
-}
 #main-letras {
   margin: 30px;
   background-color: rgba(49, 49, 49, 0.742);

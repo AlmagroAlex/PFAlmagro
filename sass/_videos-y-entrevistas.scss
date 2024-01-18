@@ -1,45 +1,28 @@
+$shadow: 0 10px 15px rgb(255, 255, 255);
 .entrevistas {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 20px;
-    .entrevistas div {
-        position: relative;
-        width: 100%;
-        padding-bottom: 56.25%; /* Proporción 16:9 para los videos de YouTube */
-        overflow: hidden;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
-    .video-container {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
+    #Videos {
+    width: 100%;
+    max-width: 600px; 
+    margin: 10px; 
+    box-shadow: $shadow;
 
     iframe {
         width: 100%;
-        height: 100%;
-        border: 0;
+        height: 400px; 
     }
-    
-}
-
-
-
-
-
-/* Media query para ajustar el espaciado entre columnas en pantallas más grandes */
-@media (min-width: 768px) {
-    .entrevistas {
-        column-gap: 30px;
     }
-}
 
-/* Media query para ajustar el espaciado entre filas en pantallas más grandes */
-@media (min-height: 600px) {
-    .entrevistas {
-        row-gap: 30px;
+    @media (max-width: 600px) {
+    #Videos {
+        max-width: 100%; 
+
+        iframe {
+        height: 200px; 
+        }
+    }
     }
 }
