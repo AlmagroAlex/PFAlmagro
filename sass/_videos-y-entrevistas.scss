@@ -1,0 +1,45 @@
+.entrevistas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    .entrevistas div {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; /* Proporción 16:9 para los videos de YouTube */
+        overflow: hidden;
+    }
+
+    .video-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+    
+}
+
+
+
+
+
+/* Media query para ajustar el espaciado entre columnas en pantallas más grandes */
+@media (min-width: 768px) {
+    .entrevistas {
+        column-gap: 30px;
+    }
+}
+
+/* Media query para ajustar el espaciado entre filas en pantallas más grandes */
+@media (min-height: 600px) {
+    .entrevistas {
+        row-gap: 30px;
+    }
+}

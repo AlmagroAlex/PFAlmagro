@@ -1,358 +1,286 @@
-/* Reset CSS */
+@charset "UTF-8";
 * {
-    margin: 0 ;
-    padding: 0 !important;
-    box-sizing: border-box ;
+  margin: 0;
+  padding: 0 !important;
+  box-sizing: border-box;
 }
 
-body {
-    background-image: url('../images/fondo.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; 
-    margin: 0 auto;
-    max-width: 1440px;
-    width: 100%;
-    height: 100%;
-    background-color: darkcyan;
-    height: auto;
-}  
-
-
-h1{
-    margin: 0
+#main-cards {
+  display: flex !important;
+  height: auto;
+  width: auto;
+  justify-content: center;
 }
-
-header {
-    height: 70px;
-    background-color: black; 
-    padding: 10px;
-    font-size: 20px;
-    font-style: italic;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000 !important;
+#main-cards #lilsupacarta {
+  margin: 30px;
+  height: auto;
+  width: 350px !important;
 }
-
-main {
-    min-height: 100vh;
-    width: 100vh;
+#main-cards #mcklopediacarta {
+  margin: 30px;
+  height: auto;
+  width: 350px !important;
 }
-
-.logo img {
-    width: 100px; 
-    height: 80px; 
-    padding: 10px;
-}
-
-
-header nav ul {
-
-    justify-content: center;
-
-}
-
-header nav ul li {
-    margin-right: 30px;
-    justify-content: center;
-}
-
-
-
-.QuienEs {
-    display: flex;
-    width: 100%;
-    height: auto;
-    padding-top: 50px;
-    font-style: italic;
-    font-size: 17px;
-    justify-content: center;
-
-}
-
-.QuienEsHijo {
-    width: 90%;
-    height: 90%;
-    background-color: rgba(0, 0, 0, 0.192);
-    margin: 0 auto;
-    padding: 20px;
-    border: 2px solid rgb(250, 250, 250);
-    margin: 20px;
-    font-style: italic;
-    border-radius: 10px;
-    color: #ffffff;
-}
-
-.Datos {
-    width: 90%;
-    max-width: 650px;
-    height: 90%;
-    max-height: 550px;
-    overflow: auto;
-    padding: 20px;
-    margin: 20px 30px;
-    font-style: italic;
-    border-radius: 10px;
-    overflow-y: hidden;
-    background-color: rgba(0, 0, 0, 0.192);
-    border: 2px solid rgb(250, 250, 250);
-    color: #ffffff;
-}
-
-/* Estilo para la sección Datos en dispositivos pequeños */
-@media (max-width: 768px) {
-    .Datos {
-        height: auto;
-        margin: 10px;
-        padding: 10px;
-    }
-}
-
-/* Estilo para la sección QuienEsHijo en dispositivos pequeños */
-@media (max-width: 768px) {
-    .QuienEsHijo {
-        width: 90%;
-        height: auto;
-        margin: 10px;
-        padding: 10px;
-    }
-}
-
-@media (max-width: 768px) {
-    .QuienEs {
-        display: block;
-    }
-}
-
-main article h2 {
-    text-align: center !important;
-}
-
-/* Grids en Discografia */
-
-#main-discografia {
-    max-width: 800px; 
-    width: 100%;
-    margin: 0 auto;
-}
-
-.DiscosGrid {
-    display: grid;
-    grid-template-columns: 152px 500px;
-    grid-template-rows: repeat(6, 152px); 
-    gap: 15px;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.Boxgrid img {
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover;
-    border-radius: 12px;
+#main-cards #apachecarta {
+  margin: 30px;
+  height: auto;
+  width: 350px !important;
 }
 
 @media (max-width: 600px) {
-    .DiscosGrid {
-        display: block;
-    }
-
-    .Boxgrid {
-        width: 90%;
-        height: 90%;
-        margin: 0 auto; 
-    }
+  #main-cards {
+    display: block !important;
+  }
+}
+header {
+  height: 70px;
+  background-color: black;
+  padding: 10px;
+  font-size: 20px;
+  font-style: italic;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000 !important;
+}
+header nav ul {
+  justify-content: center;
+}
+header nav ul li {
+  margin-right: 30px;
+  justify-content: center;
 }
 
-
-/* ESTILOS NAVBAR */
-
 .navbar-brand img {
-    width: 100px !important; 
-    height: 80px !important; 
-    padding: 10px !important;
-    background-color: black !important;
+  width: 100px !important;
+  height: 80px !important;
+  padding: 10px !important;
+  background-color: black !important;
 }
 
 .navbar {
-    background-color: rgb(0, 0, 0)!important;
-    position: fixed;
-    width: 100%;
+  background-color: rgb(0, 0, 0) !important;
+  position: fixed;
+  width: 100%;
 }
 
 /* Estilo para los enlaces en el navbar */
 .navbar-nav .nav-link {
-    color: #ffffff; /* Color del texto normal */
-    transition: color 0.3s, font-size 0.3s; /* Transición suave de color y tamaño de fuente */
+  color: #ffffff; /* Color del texto normal */
+  transition: color 0.3s, font-size 0.3s; /* Transición suave de color y tamaño de fuente */
 }
 
-
-  /* Cambiar color al pasar el cursor por encima */
+/* Cambiar color al pasar el cursor por encima */
 .navbar-nav .nav-link:hover {
-    color: #009dff; 
+  color: #009dff;
 }
 
-
-  /* Agrandar el texto al pasar el cursor por encima */
+/* Agrandar el texto al pasar el cursor por encima */
 .navbar-nav .nav-link:hover {
-    font-size: 1.1em; 
+  font-size: 1.1em;
 }
 
-
-/* Estilo para el footer */
 .footer {
-    background-color: black;
-    color: white;
-    padding-right: 20px !important;
+  background-color: black;
+  color: white;
+  padding-right: 20px !important;
 }
 
 .footer ul {
-    list-style: none;
-    padding: 20px;
-    display: flex; 
-    align-items:center;
-
+  list-style: none;
+  padding: 20px;
+  display: flex;
+  align-items: center;
 }
 
 .footer li {
-    margin-right: 25px;
-    display: inline-block; 
-    justify-content: end;
+  margin-right: 25px;
+  display: inline-block;
+  justify-content: end;
 }
 
 .footer a {
-    color: #ffffff;
-    transition: color 0.3s, font-size 0.3s;
+  color: #ffffff;
+  transition: color 0.3s, font-size 0.3s;
 }
 
 .footer a:hover {
-    color: #009dff; 
-    font-size: 1.1em;
+  color: #009dff;
+  font-size: 1.1em;
 }
 
 .nav-link {
-    font-style: italic;
-    font-size: 20px;
+  font-style: italic;
+  font-size: 20px;
 }
 
-/* Fin de estilo para el footer */
-
-/* Estilo para el footer en dispositivos pequeños */
+/* -------------------------------------Estilo para el footer en dispositivos pequeños------------------------------------- */
 @media (max-width: 768px) {
-    .footer-content {
-        flex-direction::row;
-        text-align: center;
-    }
-
-    .footer-content img {
-        margin-bottom: 10px;
-    }
-
-    .footer ul {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .footer li {
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
+  .footer-content {
+    flex-direction: row;
+    text-align: center;
+  }
+  .footer-content img {
+    margin-bottom: 10px;
+  }
+  .footer ul {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+.QuienEs {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding-top: 50px;
+  font-style: italic;
+  font-size: 17px;
+  justify-content: center;
+}
+.QuienEs .QuienEsHijo {
+  width: 90%;
+  height: 90%;
+  background-color: rgba(0, 0, 0, 0.192);
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid rgb(250, 250, 250);
+  margin: 20px;
+  font-style: italic;
+  border-radius: 10px;
+  color: #ffffff;
+}
+.QuienEs .Datos {
+  width: 90%;
+  max-width: 650px;
+  height: 90%;
+  max-height: 550px;
+  overflow: auto;
+  padding: 20px;
+  margin: 20px 30px;
+  font-style: italic;
+  border-radius: 10px;
+  overflow-y: hidden;
+  background-color: rgba(0, 0, 0, 0.192);
+  border: 2px solid rgb(250, 250, 250);
+  color: #ffffff;
 }
 
-/* ------------------------VIDEOS Y ENTREVISTAS --------------------------*/
-/* Estilos generales para la sección de entrevistas */
+@media (max-width: 768px) {
+  .Datos {
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+  }
+  .QuienEsHijo {
+    width: 90%;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+  }
+  .QuienEs {
+    display: block;
+  }
+}
+body {
+  background-image: url("../images/fondo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
+  height: 100%;
+  background-color: darkcyan;
+  height: auto;
+}
+
+#main-discografia {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+#main-discografia .DiscosGrid {
+  display: grid;
+  grid-template-columns: 152px 500px;
+  grid-template-rows: repeat(6, 152px);
+  gap: 15px;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#main-discografia .Boxgrid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+@media (max-width: 600px) {
+  .DiscosGrid {
+    display: block;
+  }
+  .Boxgrid {
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+  }
+}
 .entrevistas {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
 }
-
-/* Estilos para cada video */
-.entrevistas div {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%; /* Proporción 16:9 para los videos de YouTube */
-    overflow: hidden;
+.entrevistas .entrevistas div {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* Proporción 16:9 para los videos de YouTube */
+  overflow: hidden;
 }
-
-/* Contenedor adicional para cada iframe */
 .entrevistas .video-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
-
-/* Estilos para los iframes dentro de cada contenedor */
 .entrevistas iframe {
-    width: 100%;
-    height: 100%;
-    border: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 /* Media query para ajustar el espaciado entre columnas en pantallas más grandes */
 @media (min-width: 768px) {
-    .entrevistas {
-        column-gap: 30px;
-    }
+  .entrevistas {
+    column-gap: 30px;
+  }
 }
-
 /* Media query para ajustar el espaciado entre filas en pantallas más grandes */
 @media (min-height: 600px) {
-    .entrevistas {
-        row-gap: 30px;
-    }
+  .entrevistas {
+    row-gap: 30px;
+  }
 }
-
-
-/* estilos letras */
-
 #main-letras {
-    margin: 30px;
-    background-color:rgba(49, 49, 49, 0.742);
-    justify-content: center;
-    height: auto;
-    width: auto;
-    padding: 20px;
-    margin: 20px 30px;
-    font-style: italic;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.192);
-    border: 2px solid rgb(250, 250, 250);
-    color: #ffffff;
+  margin: 30px;
+  background-color: rgba(49, 49, 49, 0.742);
+  justify-content: center;
+  height: auto;
+  width: auto;
+  padding: 20px;
+  margin: 20px 30px;
+  font-style: italic;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.192);
+  border: 2px solid rgb(250, 250, 250);
+  color: #ffffff;
+}
+#main-letras #titulos-letras {
+  justify-content: center;
 }
 
-#titulos-letras {
-    justify-content: center;
-}
-
-/* estilos artistas */
-
-
-
-#lilsupacarta {
-    margin: 30px;
-    height: auto;
-    width: 350px !important;
-}
-
-#mcklopediacarta {
-    margin: 30px;
-    height: auto;
-    width: 350px !important;
-}
-#apachecarta {
-    margin: 30px;
-    height: auto;
-    width: 350px !important;
-}
-
-#main-cards {
-    display: flex !important;
-    height: auto;
-    width: auto;
-    justify-content: center;
-}
+/*# sourceMappingURL=style.css.map */

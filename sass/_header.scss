@@ -1,0 +1,52 @@
+header {
+    height: 70px;
+    background-color: black; 
+    padding: 10px;
+    font-size: 20px;
+    font-style: italic;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000 !important;
+    nav ul {
+        justify-content: center;
+    
+    }
+    
+    nav ul li {
+        margin-right: 30px;
+        justify-content: center;
+    }
+    
+}
+
+
+.navbar-brand img {
+    width: 100px !important; 
+    height: 80px !important; 
+    padding: 10px !important;
+    background-color: black !important;
+}
+
+.navbar {
+    background-color: rgb(0, 0, 0)!important;
+    position: fixed;
+    width: 100%;
+}
+
+/* Estilo para los enlaces en el navbar */
+.navbar-nav .nav-link {
+    color: #ffffff; /* Color del texto normal */
+    transition: color 0.3s, font-size 0.3s; /* Transición suave de color y tamaño de fuente */
+}
+
+
+  /* Cambiar color al pasar el cursor por encima */
+.navbar-nav .nav-link:hover {
+    color: #009dff; 
+}
+
+
+  /* Agrandar el texto al pasar el cursor por encima */
+.navbar-nav .nav-link:hover {
+    font-size: 1.1em; 
+}

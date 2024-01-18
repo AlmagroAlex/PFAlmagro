@@ -1,0 +1,56 @@
+.footer {
+    background-color: black;
+    color: white;
+    padding-right: 20px !important;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 20px;
+    display: flex; 
+    align-items:center;
+
+}
+
+.footer li {
+    margin-right: 25px;
+    display: inline-block; 
+    justify-content: end;
+}
+
+.footer a {
+    color: #ffffff;
+    transition: color 0.3s, font-size 0.3s;
+}
+
+.footer a:hover {
+    color: #009dff; 
+    font-size: 1.1em;
+}
+
+.nav-link {
+    font-style: italic;
+    font-size: 20px;
+}
+
+/* -------------------------------------Estilo para el footer en dispositivos pequeños------------------------------------- */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction:row;
+        text-align: center;
+    }
+
+    .footer-content img {
+        margin-bottom: 10px;
+    }
+
+    .footer ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}

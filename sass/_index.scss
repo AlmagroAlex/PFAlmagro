@@ -1,0 +1,54 @@
+
+.QuienEs {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    font-style: italic;
+    font-size: 17px;
+    justify-content: center;
+        .QuienEsHijo {
+            width: 90%;
+            height: 90%;
+            background-color: rgba(0, 0, 0, 0.192);
+            margin: 0 auto;
+            padding: 20px;
+            border: 2px solid rgb(250, 250, 250);
+            margin: 20px;
+            font-style: italic;
+            border-radius: 10px;
+            color: #ffffff;
+        }
+        .Datos {
+            width: 90%;
+            max-width: 650px;
+            height: 90%;
+            max-height: 550px;
+            overflow: auto;
+            padding: 20px;
+            margin: 20px 30px;
+            font-style: italic;
+            border-radius: 10px;
+            overflow-y: hidden;
+            background-color: rgba(0, 0, 0, 0.192);
+            border: 2px solid rgb(250, 250, 250);
+            color: #ffffff;
+        }
+}
+
+@media (max-width: 768px) {
+    .Datos {
+        height: auto;
+        margin: 10px;
+        padding: 10px;
+    }
+    .QuienEsHijo {
+        width: 90%;
+        height: auto;
+        margin: 10px;
+        padding: 10px;
+    }
+    .QuienEs {
+        display: block;
+    }
+}
